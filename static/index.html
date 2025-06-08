@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOmEhZwJz9BaRWEtKA95b8RGXKtI3QODr-w&s" alt="Logo" class="logo" />
-    <h1>Dota 2 chat</h1>
-  </header>
-
-  <section class="hero-image">
-    <img src="https://dmarket.com/blog/best-dota2-wallpapers/dota_wallpaper15_hu_dda4e36f07b5d09b.jpg" alt="Banner Image" />
+  <section class="hero-banner">
+    <img src="https://dmarket.com/blog/best-dota2-wallpapers/dota_wallpaper15_hu_dda4e36f07b5d09b.jpg" alt="Hero Image" class="hero-image">
+    <div class="hero-overlay">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOmEhZwJz9BaRWEtKA95b8RGXKtI3QODr-w&s" alt="Logo" class="hero-logo" />
+      <h1 class="hero-title">Fe1Tan Chat</h1>
+      <p class="hero-text">Пиши як чемпіон Dota 2</p>
+      <button class="hero-button" onclick="document.getElementById('messageInput').scrollIntoView({ behavior: 'smooth' });">Увірватися в чат</button>
+    </div>
   </section>
 
   <main class="chat-container">
