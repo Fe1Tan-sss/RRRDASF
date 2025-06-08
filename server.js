@@ -1,6 +1,6 @@
-const http = require("http");
-const path = require("path");
-const fs = require("fs");
+const http = require("http")
+const path = require("path")
+const fs = require("fs")
 
 const indexHtmlFile = fs.readFileSync(path.join(__dirname, 'static', 'index.html')); 
 const styleFile = fs.readFileSync(path.join(__dirname, 'static', 'style.css')); 
@@ -18,3 +18,7 @@ switch(req.url)
 });
 
 server.listen(3000);
+
+const { Server } = require('socket.io')
+const io = new Server(server)
+
