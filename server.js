@@ -19,6 +19,10 @@ switch(req.url)
 
 server.listen(3000);
 
-const { Server } = require('socket.io')
+const { Server } = require('socket.io');
+const { Socket } = require('dgram');
 const io = new Server(server)
 
+io.on('connection', (socket) =>{
+  console.log('a user connected. id - ' + socket.id);
+})
